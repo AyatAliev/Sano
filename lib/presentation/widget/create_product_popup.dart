@@ -46,8 +46,8 @@ class AddFieldPopup extends PopupRoute<CreateProductResult> {
             return Flex(
               direction: Axis.vertical,
               children: [
-                CustomTextField(controller: _nameController, hintTex: "Name"),
-                CustomTextField(controller: _priceController, hintTex: "Price"),
+                CustomTextField(controller: _nameController, hintTex: "Name",keyboardType: TextInputType.text,),
+                CustomTextField(controller: _priceController, hintTex: "Price",keyboardType: TextInputType.phone,),
                 const SizedBox(
                   height: 16,
                 ),

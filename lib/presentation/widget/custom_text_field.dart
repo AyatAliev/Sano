@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 class CustomTextField extends StatelessWidget {
   final TextEditingController controller;
   final String hintTex;
+  final TextInputType keyboardType;
 
-  const CustomTextField({Key? key, required this.controller, required this.hintTex}) : super(key: key);
+  const CustomTextField({Key? key, required this.controller, required this.hintTex, required this.keyboardType}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,6 +20,7 @@ class CustomTextField extends StatelessWidget {
       ),
       child: TextFormField(
         textCapitalization: TextCapitalization.sentences,
+        keyboardType: keyboardType,
         autocorrect: false,
         controller: controller,
         decoration: InputDecoration(

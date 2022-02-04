@@ -21,7 +21,7 @@ class CreateProductUseCase extends AsyncUseCase {
         print(error);
         print(stackTrace);
       }
-      return Left(Failure(message: "CreateProductCodeUseCase error", exception: error as Exception, stackTrace: stackTrace));
+      return Left(Failure(message: "CreateProductCodeUseCase error", exception: "$error", stackTrace: stackTrace));
     }
   }
 }

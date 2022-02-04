@@ -16,7 +16,7 @@ class ApplicationDatabase extends _$ApplicationDatabase {
   ApplicationDatabase({QueryExecutor? executor}) : super(executor ?? _openConnection());
 
   @override
-  int get schemaVersion => 1;
+  int get schemaVersion => 2;
 
   @override
   MigrationStrategy get migration {
@@ -31,6 +31,8 @@ class ApplicationDatabase extends _$ApplicationDatabase {
         }
 
         if (from == 1) {
+          await m.createTable(product);
+        } else if (from == 2) {
           await m.createTable(product);
         }
       },

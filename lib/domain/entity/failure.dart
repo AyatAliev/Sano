@@ -2,7 +2,7 @@ import 'package:meta/meta.dart';
 
 class Failure {
   final String message;
-  final Exception? exception;
+  final String? exception;
   final StackTrace? stackTrace;
 
   Failure({

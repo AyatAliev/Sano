@@ -183,6 +183,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.10.1"
+  db_viewer:
+    dependency: transitive
+    description:
+      name: db_viewer
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   drift:
     dependency: transitive
     description:
@@ -354,6 +361,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.6.1+1"
+  moor_db_viewer:
+    dependency: "direct dev"
+    description:
+      name: moor_db_viewer
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "5.0.0"
   moor_flutter:
     dependency: "direct main"
     description:
@@ -555,6 +569,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.5.1"
+  sqlite3_flutter_libs:
+    dependency: "direct main"
+    description:
+      name: sqlite3_flutter_libs
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.5.3"
   sqlparser:
     dependency: transitive
     description:
@@ -659,7 +680,7 @@ packages:
       name: xdg_directories
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.0"
+    version: "0.2.0+1"
   yaml:
     dependency: transitive
     description:

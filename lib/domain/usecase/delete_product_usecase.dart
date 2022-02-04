@@ -22,7 +22,7 @@ class DeleteProductCodeUseCase extends AsyncUseCase {
         print(error);
         print(stackTrace);
       }
-      return Left(Failure(message: "DeleteProductCodeUseCase error", exception: error as Exception, stackTrace: stackTrace));
+      return Left(Failure(message: "DeleteProductCodeUseCase error", exception: '$error', stackTrace: stackTrace));
     }
   }
 }

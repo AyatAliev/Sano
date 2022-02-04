@@ -29,9 +29,7 @@ class ProductRepositoryImpl extends ProductRepository with Mapper {
 
   @override
   Future<List<Product>> getProducts() async {
-    final List<Product> products = (await _dataSource.getProducts())
-        .map((file) => mapDbToEntityFile(file))
-        .toList();
+    final List<Product> products = (await _dataSource.getProducts()).map((file) => mapDbToEntityFile(file)).toList();
 
     return products;
   }
